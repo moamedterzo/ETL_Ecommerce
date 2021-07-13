@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DWVenditeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DimenCategoria">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NomeMacrocategoria" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenCategoria" FromRole="DimenCategoria" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataValore" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="GiornoNome" Type="String" MaxLength="9" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="GiornoTipo" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="GiornoNumeroDelMese" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="GiornoNumeroDellAnno" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="SettimanaNumeroDellAnno" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="MeseNumeroAnno" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="MeseNome" Type="String" MaxLength="9" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Trimestre" Type="Decimal" Precision="17" Scale="0" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="TrimestreAnno" Type="String" MaxLength="32" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Anno" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenData" FromRole="DimenData" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenLinguaCollezione">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ordinamento" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenLinguaCollezione" FromRole="DimenLinguaCollezione" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenLinguaColore">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenLinguaColore" FromRole="DimenLinguaColore" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenMacrocategoria">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenMacrocategoria" FromRole="DimenMacrocategoria" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenNomeDesign">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenNomeDesign" FromRole="DimenNomeDesign" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenProvincia">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NomeStato" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NomeRegione" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenProvincia" FromRole="DimenProvincia" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenSessoAbbigliamento">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenSessoAbbigliamento" FromRole="DimenSessoAbbigliamento" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenSessoCliente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenSesso" FromRole="DimenSessoCliente" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenStato">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodiceISO" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenStato" FromRole="DimenStato" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenTipoPagamento">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenTipoPagamento" FromRole="DimenTipoPagamento" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="DimenValoreTaglia">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="FattoVendita" Relationship="Self.FK_FattoVendita_DimenValoreTaglia" FromRole="DimenValoreTaglia" ToRole="FattoVendita" />
+  </EntityType>
+  <EntityType Name="FattoVendita">
+    <Key>
+      <PropertyRef Name="IDMacrocategoria" />
+      <PropertyRef Name="IDCategoria" />
+      <PropertyRef Name="IDSessoCliente" />
+      <PropertyRef Name="IDLinguaCollezione" />
+      <PropertyRef Name="IDLinguaColore" />
+      <PropertyRef Name="IDNomeDesign" />
+      <PropertyRef Name="IDSessoAbbigliamento" />
+      <PropertyRef Name="IDTipoPagamento" />
+      <PropertyRef Name="IDValoreTaglia" />
+      <PropertyRef Name="IDOrdine" />
+    </Key>
+    <Property Name="IDMacrocategoria" Type="Int32" Nullable="false" />
+    <Property Name="IDCategoria" Type="Int32" Nullable="false" />
+    <Property Name="IDSessoCliente" Type="Int32" Nullable="false" />
+    <Property Name="IDData" Type="Int32" Nullable="false" />
+    <Property Name="IDLinguaCollezione" Type="Int32" Nullable="false" />
+    <Property Name="IDLinguaColore" Type="Int32" Nullable="false" />
+    <Property Name="IDNomeDesign" Type="Int32" Nullable="false" />
+    <Property Name="IDProvincia" Type="Int32" Nullable="false" />
+    <Property Name="IDSessoAbbigliamento" Type="Int32" Nullable="false" />
+    <Property Name="IDStato" Type="Int32" Nullable="false" />
+    <Property Name="IDTipoPagamento" Type="Int32" Nullable="false" />
+    <Property Name="IDValoreTaglia" Type="Int32" Nullable="false" />
+    <Property Name="IDOrdine" Type="Int32" Nullable="false" />
+    <Property Name="PrezzoTotale" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="QuantitaVenduta" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DimenCategoria" Relationship="Self.FK_FattoVendita_DimenCategoria" FromRole="FattoVendita" ToRole="DimenCategoria" />
+    <NavigationProperty Name="DimenData" Relationship="Self.FK_FattoVendita_DimenData" FromRole="FattoVendita" ToRole="DimenData" />
+    <NavigationProperty Name="DimenLinguaCollezione" Relationship="Self.FK_FattoVendita_DimenLinguaCollezione" FromRole="FattoVendita" ToRole="DimenLinguaCollezione" />
+    <NavigationProperty Name="DimenLinguaColore" Relationship="Self.FK_FattoVendita_DimenLinguaColore" FromRole="FattoVendita" ToRole="DimenLinguaColore" />
+    <NavigationProperty Name="DimenMacrocategoria" Relationship="Self.FK_FattoVendita_DimenMacrocategoria" FromRole="FattoVendita" ToRole="DimenMacrocategoria" />
+    <NavigationProperty Name="DimenNomeDesign" Relationship="Self.FK_FattoVendita_DimenNomeDesign" FromRole="FattoVendita" ToRole="DimenNomeDesign" />
+    <NavigationProperty Name="DimenProvincia" Relationship="Self.FK_FattoVendita_DimenProvincia" FromRole="FattoVendita" ToRole="DimenProvincia" />
+    <NavigationProperty Name="DimenSessoAbbigliamento" Relationship="Self.FK_FattoVendita_DimenSessoAbbigliamento" FromRole="FattoVendita" ToRole="DimenSessoAbbigliamento" />
+    <NavigationProperty Name="DimenSessoCliente" Relationship="Self.FK_FattoVendita_DimenSesso" FromRole="FattoVendita" ToRole="DimenSessoCliente" />
+    <NavigationProperty Name="DimenStato" Relationship="Self.FK_FattoVendita_DimenStato" FromRole="FattoVendita" ToRole="DimenStato" />
+    <NavigationProperty Name="DimenTipoPagamento" Relationship="Self.FK_FattoVendita_DimenTipoPagamento" FromRole="FattoVendita" ToRole="DimenTipoPagamento" />
+    <NavigationProperty Name="DimenValoreTaglia" Relationship="Self.FK_FattoVendita_DimenValoreTaglia" FromRole="FattoVendita" ToRole="DimenValoreTaglia" />
+  </EntityType>
+  <Association Name="FK_FattoVendita_DimenCategoria">
+    <End Role="DimenCategoria" Type="Self.DimenCategoria" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenCategoria">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenData">
+    <End Role="DimenData" Type="Self.DimenData" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenData">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDData" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenLinguaCollezione">
+    <End Role="DimenLinguaCollezione" Type="Self.DimenLinguaCollezione" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenLinguaCollezione">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDLinguaCollezione" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenLinguaColore">
+    <End Role="DimenLinguaColore" Type="Self.DimenLinguaColore" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenLinguaColore">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDLinguaColore" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenMacrocategoria">
+    <End Role="DimenMacrocategoria" Type="Self.DimenMacrocategoria" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenMacrocategoria">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDMacrocategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenNomeDesign">
+    <End Role="DimenNomeDesign" Type="Self.DimenNomeDesign" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenNomeDesign">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDNomeDesign" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenProvincia">
+    <End Role="DimenProvincia" Type="Self.DimenProvincia" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenProvincia">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenSessoAbbigliamento">
+    <End Role="DimenSessoAbbigliamento" Type="Self.DimenSessoAbbigliamento" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenSessoAbbigliamento">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDSessoAbbigliamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenSesso">
+    <End Role="DimenSessoCliente" Type="Self.DimenSessoCliente" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenSessoCliente">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDSessoCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenStato">
+    <End Role="DimenStato" Type="Self.DimenStato" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenStato">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDStato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenTipoPagamento">
+    <End Role="DimenTipoPagamento" Type="Self.DimenTipoPagamento" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenTipoPagamento">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDTipoPagamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FattoVendita_DimenValoreTaglia">
+    <End Role="DimenValoreTaglia" Type="Self.DimenValoreTaglia" Multiplicity="1" />
+    <End Role="FattoVendita" Type="Self.FattoVendita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DimenValoreTaglia">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FattoVendita">
+        <PropertyRef Name="IDValoreTaglia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DWVenditeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DimenCategoria" EntityType="Self.DimenCategoria" />
+    <EntitySet Name="DimenData" EntityType="Self.DimenData" />
+    <EntitySet Name="DimenLinguaCollezione" EntityType="Self.DimenLinguaCollezione" />
+    <EntitySet Name="DimenLinguaColore" EntityType="Self.DimenLinguaColore" />
+    <EntitySet Name="DimenMacrocategoria" EntityType="Self.DimenMacrocategoria" />
+    <EntitySet Name="DimenNomeDesign" EntityType="Self.DimenNomeDesign" />
+    <EntitySet Name="DimenProvincia" EntityType="Self.DimenProvincia" />
+    <EntitySet Name="DimenSessoAbbigliamento" EntityType="Self.DimenSessoAbbigliamento" />
+    <EntitySet Name="DimenSessoCliente" EntityType="Self.DimenSessoCliente" />
+    <EntitySet Name="DimenStato" EntityType="Self.DimenStato" />
+    <EntitySet Name="DimenTipoPagamento" EntityType="Self.DimenTipoPagamento" />
+    <EntitySet Name="DimenValoreTaglia" EntityType="Self.DimenValoreTaglia" />
+    <EntitySet Name="FattoVendita" EntityType="Self.FattoVendita" />
+    <AssociationSet Name="FK_FattoVendita_DimenCategoria" Association="Self.FK_FattoVendita_DimenCategoria">
+      <End Role="DimenCategoria" EntitySet="DimenCategoria" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenData" Association="Self.FK_FattoVendita_DimenData">
+      <End Role="DimenData" EntitySet="DimenData" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenLinguaCollezione" Association="Self.FK_FattoVendita_DimenLinguaCollezione">
+      <End Role="DimenLinguaCollezione" EntitySet="DimenLinguaCollezione" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenLinguaColore" Association="Self.FK_FattoVendita_DimenLinguaColore">
+      <End Role="DimenLinguaColore" EntitySet="DimenLinguaColore" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenMacrocategoria" Association="Self.FK_FattoVendita_DimenMacrocategoria">
+      <End Role="DimenMacrocategoria" EntitySet="DimenMacrocategoria" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenNomeDesign" Association="Self.FK_FattoVendita_DimenNomeDesign">
+      <End Role="DimenNomeDesign" EntitySet="DimenNomeDesign" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenProvincia" Association="Self.FK_FattoVendita_DimenProvincia">
+      <End Role="DimenProvincia" EntitySet="DimenProvincia" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenSessoAbbigliamento" Association="Self.FK_FattoVendita_DimenSessoAbbigliamento">
+      <End Role="DimenSessoAbbigliamento" EntitySet="DimenSessoAbbigliamento" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenSesso" Association="Self.FK_FattoVendita_DimenSesso">
+      <End Role="DimenSessoCliente" EntitySet="DimenSessoCliente" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenStato" Association="Self.FK_FattoVendita_DimenStato">
+      <End Role="DimenStato" EntitySet="DimenStato" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenTipoPagamento" Association="Self.FK_FattoVendita_DimenTipoPagamento">
+      <End Role="DimenTipoPagamento" EntitySet="DimenTipoPagamento" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FattoVendita_DimenValoreTaglia" Association="Self.FK_FattoVendita_DimenValoreTaglia">
+      <End Role="DimenValoreTaglia" EntitySet="DimenValoreTaglia" />
+      <End Role="FattoVendita" EntitySet="FattoVendita" />
+    </AssociationSet>
+    <FunctionImport Name="createFattoVendita">
+      <Parameter Name="IDMacrocategoria" Mode="In" Type="Int32" />
+      <Parameter Name="IDCategoria" Mode="In" Type="Int32" />
+      <Parameter Name="IDSessoCliente" Mode="In" Type="Int32" />
+      <Parameter Name="IDData" Mode="In" Type="Int32" />
+      <Parameter Name="IDLinguaCollezione" Mode="In" Type="Int32" />
+      <Parameter Name="IDLinguaColore" Mode="In" Type="Int32" />
+      <Parameter Name="IDNomeDesign" Mode="In" Type="Int32" />
+      <Parameter Name="IDProvincia" Mode="In" Type="Int32" />
+      <Parameter Name="IDSessoAbbigliamento" Mode="In" Type="Int32" />
+      <Parameter Name="IDStato" Mode="In" Type="Int32" />
+      <Parameter Name="IDTipoPagamento" Mode="In" Type="Int32" />
+      <Parameter Name="IDValoreTaglia" Mode="In" Type="Int32" />
+      <Parameter Name="IDOrdine" Mode="In" Type="Int32" />
+      <Parameter Name="PrezzoTotale" Mode="In" Type="Decimal" />
+      <Parameter Name="QuantitaVenduta" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getIDDimenData" ReturnType="Collection(Int32)">
+      <Parameter Name="data" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

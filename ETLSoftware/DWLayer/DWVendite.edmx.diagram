@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6b0f72e6a93146e89a4b2da202fdbce8" Name="Diagram1" ZoomLevel="70">
+        <EntityTypeShape EntityType="DWVenditeModel.DimenCategoria" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenData" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenLinguaCollezione" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenLinguaColore" Width="1.5" PointX="0.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenMacrocategoria" Width="1.5" PointX="0.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenNomeDesign" Width="1.5" PointX="0.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenProvincia" Width="1.5" PointX="0.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenSessoAbbigliamento" Width="1.5" PointX="0.75" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenSessoCliente" Width="1.5" PointX="0.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenStato" Width="1.5" PointX="0.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenTipoPagamento" Width="1.5" PointX="0.75" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.DimenValoreTaglia" Width="1.5" PointX="0.75" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DWVenditeModel.FattoVendita" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenCategoria" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenData" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenLinguaCollezione" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenLinguaColore" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenMacrocategoria" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenNomeDesign" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenProvincia" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenSessoAbbigliamento" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenSesso" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenStato" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenTipoPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="DWVenditeModel.FK_FattoVendita_DimenValoreTaglia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

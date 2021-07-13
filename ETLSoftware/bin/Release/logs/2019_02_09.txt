@@ -1,0 +1,23 @@
+Riga non importata - IDStato presente ma errato: riga alla posizione 2258, id ordine 2625
+Riga non importata - IDStato presente ma errato: riga alla posizione 3192, id ordine 3518
+Riga non importata - IDStato presente ma errato: riga alla posizione 3738, id ordine 4022
+Riga non importata - IDStato presente ma errato: riga alla posizione 3739, id ordine 4022
+Riga non importata - IDStato presente ma errato: riga alla posizione 3740, id ordine 4022
+Riga non importata - IDStato presente ma errato: riga alla posizione 8016, id ordine 8624
+Riga non importata - IDStato presente ma errato: riga alla posizione 15679, id ordine 16348
+Riga non importata - IDStato presente ma errato: riga alla posizione 15680, id ordine 16348
+Riga non importata - IDStato presente ma errato: riga alla posizione 16749, id ordine 17389
+Riga non importata - IDStato presente ma errato: riga alla posizione 18326, id ordine 18911
+Riga non importata - IDStato presente ma errato: riga alla posizione 18327, id ordine 18911
+Riga non importata - IDStato presente ma errato: riga alla posizione 722, id ordine 23783
+Riga non importata - CodStatoFatturazione mancante: riga alla posizione 9279, id ordine 40974
+Riga non importata - IDStato presente ma errato: riga alla posizione 12920, id ordine 46501
+Riga non importata - IDStato presente ma errato: riga alla posizione 13373, id ordine 47204
+Riga non importata - DataOrdine mancante: riga alla posizione 13714, id ordine 47694
+Riga non importata - IDStato presente ma errato: riga alla posizione 22438, id ordine 68529
+Riga non importata - IDStato presente ma errato: riga alla posizione 10181, id ordine 99560
+Riga non importata - IDStato presente ma errato: riga alla posizione 14996, id ordine 109862
+Riga non importata - IDStato presente ma errato: riga alla posizione 1081, id ordine 126873
+Riga non importata - CodStatoFatturazione mancante: riga alla posizione 5974, id ordine 132816
+Riga non importata - CodStatoFatturazione mancante: riga alla posizione 5976, id ordine 132820
+Riga non importata - IDStato presente ma errato: riga alla posizione 9087, id ordine 136217

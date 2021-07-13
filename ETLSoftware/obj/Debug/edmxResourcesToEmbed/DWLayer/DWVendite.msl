@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DWVenditeModelStoreContainer" CdmEntityContainer="DWVenditeEntities">
+    <EntitySetMapping Name="DimenCategoria">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenCategoria">
+        <MappingFragment StoreEntitySet="DimenCategoria">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="NomeMacrocategoria" ColumnName="NomeMacrocategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenData">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenData">
+        <MappingFragment StoreEntitySet="DimenData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DataValore" ColumnName="DataValore" />
+          <ScalarProperty Name="GiornoNome" ColumnName="GiornoNome" />
+          <ScalarProperty Name="GiornoTipo" ColumnName="GiornoTipo" />
+          <ScalarProperty Name="GiornoNumeroDelMese" ColumnName="GiornoNumeroDelMese" />
+          <ScalarProperty Name="GiornoNumeroDellAnno" ColumnName="GiornoNumeroDellAnno" />
+          <ScalarProperty Name="SettimanaNumeroDellAnno" ColumnName="SettimanaNumeroDellAnno" />
+          <ScalarProperty Name="MeseNumeroAnno" ColumnName="MeseNumeroAnno" />
+          <ScalarProperty Name="MeseNome" ColumnName="MeseNome" />
+          <ScalarProperty Name="Trimestre" ColumnName="Trimestre" />
+          <ScalarProperty Name="TrimestreAnno" ColumnName="TrimestreAnno" />
+          <ScalarProperty Name="Anno" ColumnName="Anno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenLinguaCollezione">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenLinguaCollezione">
+        <MappingFragment StoreEntitySet="DimenLinguaCollezione">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Ordinamento" ColumnName="Ordinamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenLinguaColore">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenLinguaColore">
+        <MappingFragment StoreEntitySet="DimenLinguaColore">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenMacrocategoria">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenMacrocategoria">
+        <MappingFragment StoreEntitySet="DimenMacrocategoria">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenNomeDesign">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenNomeDesign">
+        <MappingFragment StoreEntitySet="DimenNomeDesign">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenProvincia">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenProvincia">
+        <MappingFragment StoreEntitySet="DimenProvincia">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="NomeStato" ColumnName="NomeStato" />
+          <ScalarProperty Name="NomeRegione" ColumnName="NomeRegione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenSessoAbbigliamento">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenSessoAbbigliamento">
+        <MappingFragment StoreEntitySet="DimenSessoAbbigliamento">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenSessoCliente">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenSessoCliente">
+        <MappingFragment StoreEntitySet="DimenSessoCliente">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenStato">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenStato">
+        <MappingFragment StoreEntitySet="DimenStato">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CodiceISO" ColumnName="CodiceISO" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenTipoPagamento">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenTipoPagamento">
+        <MappingFragment StoreEntitySet="DimenTipoPagamento">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DimenValoreTaglia">
+      <EntityTypeMapping TypeName="DWVenditeModel.DimenValoreTaglia">
+        <MappingFragment StoreEntitySet="DimenValoreTaglia">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FattoVendita">
+      <EntityTypeMapping TypeName="DWVenditeModel.FattoVendita">
+        <MappingFragment StoreEntitySet="FattoVendita">
+          <ScalarProperty Name="IDMacrocategoria" ColumnName="IDMacrocategoria" />
+          <ScalarProperty Name="IDCategoria" ColumnName="IDCategoria" />
+          <ScalarProperty Name="IDSessoCliente" ColumnName="IDSessoCliente" />
+          <ScalarProperty Name="IDData" ColumnName="IDData" />
+          <ScalarProperty Name="IDLinguaCollezione" ColumnName="IDLinguaCollezione" />
+          <ScalarProperty Name="IDLinguaColore" ColumnName="IDLinguaColore" />
+          <ScalarProperty Name="IDNomeDesign" ColumnName="IDNomeDesign" />
+          <ScalarProperty Name="IDProvincia" ColumnName="IDProvincia" />
+          <ScalarProperty Name="IDSessoAbbigliamento" ColumnName="IDSessoAbbigliamento" />
+          <ScalarProperty Name="IDStato" ColumnName="IDStato" />
+          <ScalarProperty Name="IDTipoPagamento" ColumnName="IDTipoPagamento" />
+          <ScalarProperty Name="IDValoreTaglia" ColumnName="IDValoreTaglia" />
+          <ScalarProperty Name="IDOrdine" ColumnName="IDOrdine" />
+          <ScalarProperty Name="PrezzoTotale" ColumnName="PrezzoTotale" />
+          <ScalarProperty Name="QuantitaVenduta" ColumnName="QuantitaVenduta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="createFattoVendita" FunctionName="DWVenditeModel.Store.createFattoVendita" />
+    <FunctionImportMapping FunctionImportName="getIDDimenData" FunctionName="DWVenditeModel.Store.getIDDimenData" />
+  </EntityContainerMapping>
+</Mapping>

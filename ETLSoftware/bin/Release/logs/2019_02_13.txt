@@ -1,0 +1,4 @@
+Riga non importata - eccezione avvenuta: Procedura terminata, il file da importare è stato già processato in precedenza
+   in ETLSoftware.DataTransform.DataTransformator.ReadAndStoreData(String pathFile, DataTransformatorListener listener) in C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\DataTransform\DataTransformator.cs:riga 185
+Riga non importata - DataOrdine maggiore della data attuale (informazione mendace): riga alla posizione 1, id ordine 125624
+Riga non importata - DataOrdine maggiore della data attuale (informazione mendace): riga alla posizione 1, id ordine 9125624

@@ -1,0 +1,44 @@
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\ETLSoftware.exe.config
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\ETLSoftware.exe
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\ETLSoftware.pdb
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csprojAssemblyReference.cache
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.Properties.Resources.resources
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csproj.GenerateResource.cache
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csproj.CoreCompileInputs.cache
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.exe
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.pdb
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\NPOI.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\NPOI.OOXML.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csproj.CopyComplete
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.xml
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\bin\Debug\it\EntityFramework.resources.dll
+C:\Users\Amedeo\source\repos\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.MainForm.resources
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\ETLSoftware.exe.config
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\ETLSoftware.exe
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\ETLSoftware.pdb
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\NPOI.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\NPOI.OOXML.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.xml
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\bin\Debug\it\EntityFramework.resources.dll
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csprojAssemblyReference.cache
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.MainForm.resources
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.Properties.Resources.resources
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csproj.GenerateResource.cache
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csproj.CoreCompileInputs.cache
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.csproj.CopyComplete
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.exe
+D:\Documenti\UNIVERSITA\Altro\3.1\Integrazione e test\PROGETTO\ETLSoftware\ETLSoftware\obj\Debug\ETLSoftware.pdb
